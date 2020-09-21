@@ -18,7 +18,6 @@
          </font>
       </Label>
       <Separator layoutY="44.0" prefHeight="23.0" prefWidth="695.0" />
-      <Button layoutX="620.0" layoutY="12.0" mnemonicParsing="false" text="Logout" />
       <Label layoutX="281.0" layoutY="67.0" text="New Customer">
          <font>
             <Font name="System Bold" size="18.0" />

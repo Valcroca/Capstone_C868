@@ -14,21 +14,17 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.net.URL;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-import java.util.Collections;
-import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.TimeZone;
 
-public class MainScreenController implements Initializable {
+public class MainController implements Initializable {
 
     @FXML
     private RadioButton radioBtnViewWeek;
@@ -318,11 +314,9 @@ public class MainScreenController implements Initializable {
         alert.setTitle("Confirmation Dialog");
         alert.setHeaderText("Delete Appointment");
         alert.setContentText("Are you sure you want to delete this appointment?");
-
-        Optional<ButtonType> result = alert.showAndWait();
-        if (result.get() == ButtonType.OK){
+        //using lambda expression for efficiency instead of 'if' statement
+        alert.showAndWait().filter(response -> response == ButtonType.OK).ifPresent(response -> {
             Appointment appointmentToDelete = appointmentsTable.getSelectionModel().getSelectedItem();
-
             try {
                 PreparedStatement ps = DBConnection.startConnection().prepareStatement("DELETE appointment.* FROM appointment " +
                         "WHERE appointment.appointmentId = ?;");
@@ -341,7 +335,7 @@ public class MainScreenController implements Initializable {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
+        });
     }
 
     //DELETE customer record
@@ -351,9 +345,8 @@ public class MainScreenController implements Initializable {
         alert.setTitle("Confirmation Dialog");
         alert.setHeaderText("Delete Customer");
         alert.setContentText("Are you sure you want to delete this customer?");
-
-        Optional<ButtonType> result = alert.showAndWait();
-        if (result.get() == ButtonType.OK){
+        //using lambda expression for efficiency instead of 'if' statement
+        alert.showAndWait().filter(response -> response == ButtonType.OK).ifPresent(response -> {
             Customer customerToDelete = customersTable.getSelectionModel().getSelectedItem();
 
             try {
@@ -374,8 +367,7 @@ public class MainScreenController implements Initializable {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
-
+        });
     }
 
     @FXML
@@ -433,6 +425,8 @@ public class MainScreenController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
+
 
     @FXML
     void viewAllHandler(ActionEvent event) {
