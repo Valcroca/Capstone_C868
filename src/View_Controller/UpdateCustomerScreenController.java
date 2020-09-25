@@ -147,7 +147,7 @@ public class UpdateCustomerScreenController implements Initializable {
 
                 int updatedCustomerRow = psCustomer.executeUpdate();
                 if (updatedCustomerRow == 0) {
-                    throw new SQLException("Customer update failed.");
+                    throw new SQLException("Patient update failed.");
                 } else {
                     //success message alert
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);

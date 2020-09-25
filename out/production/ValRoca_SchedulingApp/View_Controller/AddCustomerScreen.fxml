@@ -12,13 +12,13 @@
 
 <AnchorPane prefHeight="682.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddCustomerScreenController">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" text="Val Roca's Appointment Scheduling App">
+      <Label layoutX="14.0" layoutY="14.0" text="Appointment Tracking Application">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <Separator layoutY="44.0" prefHeight="23.0" prefWidth="695.0" />
-      <Label layoutX="281.0" layoutY="67.0" text="New Customer">
+      <Label layoutX="281.0" layoutY="67.0" text="New Patient">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -39,6 +39,6 @@
             <ComboBox fx:id="cityComboBox" layoutX="166.0" layoutY="271.0" prefHeight="27.0" prefWidth="167.0" promptText="Select" />
          </children>
       </Pane>
-      <Button fx:id="saveNewCustomerBtn" layoutX="483.0" layoutY="635.0" mnemonicParsing="false" onAction="#saveNewCustomerHandler" text="Save Customer" />
+      <Button fx:id="saveNewCustomerBtn" layoutX="483.0" layoutY="635.0" mnemonicParsing="false" onAction="#saveNewCustomerHandler" text="Save Patient" />
    </children>
 </AnchorPane>

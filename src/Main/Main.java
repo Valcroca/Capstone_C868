@@ -20,7 +20,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../View_Controller/LoginScreen.fxml"));
-        primaryStage.setTitle("Software II");
+        primaryStage.setTitle("Valeria Roca - Capstone Project");
         primaryStage.setScene(new Scene(root, 685, 503));
         primaryStage.show();
     }

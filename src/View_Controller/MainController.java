@@ -108,6 +108,12 @@ public class MainController implements Initializable {
     @FXML
     private Button customerCountBtn;
 
+    @FXML
+    private Button patientSearch;
+
+    @FXML
+    private TextField patientsSearchBox;
+
     private static ObservableList<Customer> allCustomers = FXCollections.observableArrayList();
     private static ObservableList<Appointment> allAppointments = FXCollections.observableArrayList();
     //get the logged-in user's id
@@ -477,5 +483,13 @@ public class MainController implements Initializable {
         stage.show();
     }
 
-
+    @FXML
+    void searchPatients(ActionEvent event) {
+        String searchedPatient = patientsSearchBox.getText().toLowerCase();
+        for (Customer patient : allCustomers) {
+            if (patient.getCustomerName().toLowerCase().contains(searchedPatient)) {
+                customersTable.getSelectionModel().select(patient);
+            }
+        }
+    }
 }

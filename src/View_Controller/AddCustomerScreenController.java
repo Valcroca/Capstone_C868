@@ -115,7 +115,7 @@ public class AddCustomerScreenController implements Initializable {
                 psCustomer.setString(7, "app user");
                 int newCustomerRow = psCustomer.executeUpdate();
                 if (newCustomerRow == 0) {
-                    throw new SQLException("Customer creation failed.");
+                    throw new SQLException("Patient creation failed.");
                 } else {
                     //success message alert
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);

@@ -43,7 +43,7 @@ public class CustomerCountReportScreenController implements Initializable {
             String query = "SELECT COUNT(customerId) FROM customer";
             ResultSet results = statement.executeQuery(query);
             StringBuilder customerCountReport = new StringBuilder();
-            customerCountReport.append("Total Number of Customers: ");
+            customerCountReport.append("Total Number of Patients: ");
             while (results.next()) {
                 customerCountReport.append(results.getInt("count(customerId)"));}
             statement.close();
