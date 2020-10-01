@@ -346,7 +346,7 @@ public class UpdateAppointmentScreenController implements Initializable {
             errorMessage += "Type cannot be empty.\n";
 
         if (customer == null)
-            errorMessage += "Please select a customer.\n";
+            errorMessage += "Please select a patient.\n";
 
         if (startDate == null)
             errorMessage += "Please select a Start Date.\n";

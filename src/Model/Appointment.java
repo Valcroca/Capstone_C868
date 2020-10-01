@@ -42,7 +42,10 @@ public class Appointment {
     }
 
     public void setCustomerId(int customerId) {
-        this.customerId = customerId;
+        if (customerId > 0) {
+            this.customerId = customerId;
+        } else
+           throw new IllegalArgumentException("customerID must be bigger than 0") ;
     }
 
     public int getUserId() {
@@ -50,7 +53,10 @@ public class Appointment {
     }
 
     public void setUserId(int userId) {
-        this.userId = userId;
+        if (userId > 0)
+            this.userId = userId;
+        else
+            throw new IllegalArgumentException("userID must be bigger than 0") ;
     }
 
     public String getTitle() {
@@ -58,7 +64,10 @@ public class Appointment {
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        if (!title.isEmpty())
+            this.title = title;
+        else
+            throw new IllegalArgumentException("title cannot be empty");
     }
 
     public String getDescription() {
@@ -90,7 +99,10 @@ public class Appointment {
     }
 
     public void setType(String type) {
-        this.type = type;
+        if (!type.isEmpty())
+            this.type = type;
+        else
+            throw new IllegalArgumentException("type cannot be empty");
     }
 
     public String getUrl() {
@@ -106,7 +118,10 @@ public class Appointment {
     }
 
     public void setStart(String start) {
-        this.start = start;
+        if (!start.isEmpty())
+            this.start = start;
+        else
+            throw new IllegalArgumentException("start cannot be empty");
     }
 
     public String getEnd() {
@@ -114,6 +129,9 @@ public class Appointment {
     }
 
     public void setEnd(String end) {
-        this.end = end;
+        if (!end.isEmpty())
+            this.end = end;
+        else
+            throw new IllegalArgumentException("end cannot be empty");
     }
 }
