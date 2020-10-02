@@ -11,7 +11,7 @@ public class AppointmentTest {
 
     @Before
     public void setUp() throws Exception {
-        appointment = new Appointment(1111, 2, 2, "Test", "Test description", "Test Location", "Test Contact", "Test"," Test URL", "2004-10-19 10:23:54", "2004-10-19 11:23:54");
+        appointment = new Appointment();
     }
 
 
@@ -30,7 +30,14 @@ public class AppointmentTest {
     }
 
     @Test
-    public void setUserId() {
+    public void setCustomerIdValid() {
+        appointment.setCustomerId(44);
+        int expected = 44;
+        assertEquals(expected, appointment.getCustomerId());
+    }
+
+    @Test
+    public void setUserIdInvalid() {
         try {
             appointment.setUserId(-100);
             fail("negative setUserId() should trigger an exception");
@@ -44,7 +51,14 @@ public class AppointmentTest {
     }
 
     @Test
-    public void setTitle() {
+    public void setUserIdValid() {
+        appointment.setUserId(22);
+        int expected = 22;
+        assertEquals(expected, appointment.getUserId());
+    }
+
+    @Test
+    public void setTitleInvalid() {
         try {
             appointment.setTitle("");
             fail("empty string should trigger an exception");
@@ -58,7 +72,14 @@ public class AppointmentTest {
     }
 
     @Test
-    public void setType() {
+    public void setTitleValid() {
+        appointment.setTitle("Test");
+        String expected = "Test";
+        assertEquals(expected, appointment.getTitle());
+    }
+
+    @Test
+    public void setTypeInvalid() {
         try {
             appointment.setType("");
             fail("empty string should trigger an exception");
@@ -72,7 +93,14 @@ public class AppointmentTest {
     }
 
     @Test
-    public void setStart() {
+    public void setTypeValid() {
+        appointment.setType("Test");
+        String expected = "Test";
+        assertEquals(expected, appointment.getType());
+    }
+
+    @Test
+    public void setStartInvalid() {
         try {
             appointment.setStart("");
             fail("empty string should trigger an exception");
@@ -86,7 +114,14 @@ public class AppointmentTest {
     }
 
     @Test
-    public void setEnd() {
+    public void setStartValid() {
+        appointment.setStart("2020-10-10 9:00:00");
+        String expected = "2020-10-10 9:00:00";
+        assertEquals(expected, appointment.getStart());
+    }
+
+    @Test
+    public void setEndInvalid() {
         try {
             appointment.setEnd("");
             fail("empty string should trigger an exception");
@@ -97,5 +132,12 @@ public class AppointmentTest {
         catch(Exception e) {
             fail("wrong exception thrown for setEnd() with empty string");
         }
+    }
+
+    @Test
+    public void setEndValid() {
+        appointment.setEnd("2020-10-10 10:00:00");
+        String expected = "2020-10-10 10:00:00";
+        assertEquals(expected, appointment.getEnd());
     }
 }

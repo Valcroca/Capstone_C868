@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Model/AppointmentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/MyFirstTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LoginLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ValRoca_SchedulingApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ValRoca_SchedulingApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/AddAppointmentScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View_Controller/AddAppointmentScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/UpdateAppointmentScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View_Controller/UpdateAppointmentScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Model/AppointmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Model/AppointmentTest.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,56 +59,17 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="MyFirstTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tests/MyFirstTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="471">
-                  <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AppointmentTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Tests/Model/AppointmentTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="86" column="4" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Appointment.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Model/Appointment.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="129" selection-start-line="129" selection-end-line="129" />
-                  <folding>
-                    <element signature="e#1092#1093#0" expanded="true" />
-                    <element signature="e#1128#1129#0" expanded="true" />
-                    <element signature="e#1183#1184#0" expanded="true" />
-                    <element signature="e#1233#1234#0" expanded="true" />
-                    <element signature="e#1267#1268#0" expanded="true" />
-                    <element signature="e#1300#1301#0" expanded="true" />
-                    <element signature="e#1556#1557#0" expanded="true" />
-                    <element signature="e#1585#1586#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="AppointmentTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/Model/AppointmentTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="119" column="55" lean-forward="true" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -409,14 +361,20 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MyFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppointmentTest.setCustomerIdValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ValRoca_SchedulingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyFirstTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.AppointmentTest" />
+      <option name="METHOD_NAME" value="setCustomerIdValid" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -426,13 +384,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MyFirstTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppointmentTest.setStartValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ValRoca_SchedulingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyFirstTest" />
-      <option name="METHOD_NAME" value="firstTest" />
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.AppointmentTest" />
+      <option name="METHOD_NAME" value="setStartValid" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -501,19 +465,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.MyFirstTest.firstTest" />
-      <item itemvalue="JUnit.MyFirstTest" />
       <item itemvalue="JUnit.AppointmentTest" />
       <item itemvalue="JUnit.AppointmentTest.setAppointmentId" />
       <item itemvalue="JUnit.AppointmentTest.setCustomerIdInvalid" />
+      <item itemvalue="JUnit.AppointmentTest.setCustomerIdValid" />
+      <item itemvalue="JUnit.AppointmentTest.setStartValid" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AppointmentTest" />
+        <item itemvalue="JUnit.AppointmentTest.setStartValid" />
+        <item itemvalue="JUnit.AppointmentTest.setCustomerIdValid" />
         <item itemvalue="JUnit.AppointmentTest.setCustomerIdInvalid" />
         <item itemvalue="JUnit.AppointmentTest.setAppointmentId" />
-        <item itemvalue="JUnit.MyFirstTest" />
-        <item itemvalue="JUnit.MyFirstTest.firstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -532,15 +496,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_ValRoca_SchedulingApp - 2020.09.30 at 14h 28m 48s.xml">
-      <configuration name="All in ValRoca_SchedulingApp" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_ValRoca_SchedulingApp - 2020.10.01 at 11h 20m 03s.xml">
-      <configuration name="All in ValRoca_SchedulingApp" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyFirstTest_firstTest - 2020.10.01 at 11h 22m 58s.xml">
-      <configuration name="MyFirstTest.firstTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyFirstTest - 2020.10.01 at 11h 27m 59s.xml">
       <configuration name="MyFirstTest" configurationId="JUnit" />
     </history-entry>
@@ -561,6 +516,15 @@
     </history-entry>
     <history-entry file="AppointmentTest_setCustomerIdInvalid - 2020.10.01 at 14h 10m 31s.xml">
       <configuration name="AppointmentTest.setCustomerIdInvalid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppointmentTest - 2020.10.01 at 14h 54m 40s.xml">
+      <configuration name="AppointmentTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppointmentTest_setCustomerIdValid - 2020.10.01 at 15h 06m 37s.xml">
+      <configuration name="AppointmentTest.setCustomerIdValid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppointmentTest_setStartValid - 2020.10.02 at 10h 26m 40s.xml">
+      <configuration name="AppointmentTest.setStartValid" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -583,7 +547,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32900944" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.19097222" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19097222" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.15566038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -984,16 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/MyFirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View_Controller/AddAppointmentScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3889">
@@ -1025,10 +979,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/MyFirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/Model/AppointmentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="86" column="4" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+        <state relative-caret-position="182">
+          <caret line="119" column="55" lean-forward="true" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
         </state>
       </provider>
     </entry>
