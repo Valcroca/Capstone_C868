@@ -14,7 +14,6 @@ public class AppointmentTest {
         appointment = new Appointment();
     }
 
-
     @Test
     public void setCustomerIdInvalid() {
         try {
